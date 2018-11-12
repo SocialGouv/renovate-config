@@ -4,5 +4,6 @@
     ":preserveSemverRanges",
     ":reviewer(douglasduteil)",
     ":semanticCommits"
-  ]
+  ],
+  "rangeStrategy": "bump"
 }
