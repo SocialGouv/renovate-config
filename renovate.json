@@ -5,5 +5,9 @@
     ":prHourlyLimit4",
     ":semanticCommits"
   ],
+	"postUpdateOptions": [
+    "npmDedupe", 
+    "yarnDedupeHighest"
+  ],
   "rangeStrategy": "bump"
 }
