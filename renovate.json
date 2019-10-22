@@ -5,7 +5,7 @@
     ":prHourlyLimit4",
     ":semanticCommits"
   ],
-	"postUpdateOptions": [
+  "postUpdateOptions": [
     "npmDedupe", 
     "yarnDedupeHighest"
   ],
