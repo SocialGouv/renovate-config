@@ -1,6 +1,7 @@
 {
   "extends": [
     "config:base",
+    ":masterIssue",
     ":preserveSemverRanges",
     ":prHourlyLimit4",
     ":semanticCommits"
