@@ -8,7 +8,7 @@
     ":semanticCommits"
   ],
   "node": {
-    "supportPolicy": ["lts_latest"]
+    "supportPolicy": ["lts"]
   },
   "postUpdateOptions": [
     "npmDedupe", 
