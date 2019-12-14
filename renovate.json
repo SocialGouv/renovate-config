@@ -1,6 +1,7 @@
 {
   "extends": [
     "config:base",
+    "docker:enableMajor",
     ":masterIssue",
     ":preserveSemverRanges",
     ":prHourlyLimit4",
