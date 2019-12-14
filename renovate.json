@@ -7,6 +7,9 @@
     ":prHourlyLimit4",
     ":semanticCommits"
   ],
+  "node": {
+    "supportPolicy": ["lts_latest"]
+  },
   "postUpdateOptions": [
     "npmDedupe", 
     "yarnDedupeHighest"
