@@ -4,7 +4,7 @@ Our shared renovate config
 
 ## usage
 
-Add `.renovaters.json` to your project 
+Add `.renovaterc.json` to your project 
 
 ```json
 {
