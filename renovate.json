@@ -5,7 +5,12 @@
     ":masterIssue",
     ":preserveSemverRanges",
     ":prHourlyLimit4",
-    ":semanticCommits"
+    ":semanticCommits",
+    "group:allNonMajor",
+    "group:monorepos",
+    "group:recommended",
+    ":timezone(Europe/Paris)",
+    "schedule:nonOfficeHours"
   ],
   "node": {
     "supportPolicy": ["active"]
