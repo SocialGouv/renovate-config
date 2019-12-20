@@ -15,6 +15,14 @@
   "node": {
     "supportPolicy": ["active"]
   },
+  "packageRules": [
+    {
+      "groupName": "SocialGouv",
+      "packagePatterns": [
+        "^@socialgouv/"
+      ]
+    }
+  ],
   "postUpdateOptions": [
     "npmDedupe", 
     "yarnDedupeHighest"
