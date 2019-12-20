@@ -1,10 +1,10 @@
-# renovate-config
+# SocialGouv Renovate Config
 
 Our shared renovate config
 
-## usage
+## Usage
 
-Add `.renovaterc.json` to your project 
+Add `.github/renovate.json` to your project 
 
 ```json
 {
@@ -12,14 +12,6 @@ Add `.renovaterc.json` to your project
   "extends": [
     "github>SocialGouv/renovate-config",
     ":automergeAll"
-  ],
-  "packageRules": [
-    {
-      "groupName": "SocialGouv",
-      "packagePatterns": [
-        "^@socialgouv/"
-      ]
-    }
   ]
 }
 ```
