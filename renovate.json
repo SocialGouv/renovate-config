@@ -26,5 +26,6 @@
     "npmDedupe", 
     "yarnDedupeHighest"
   ],
-  "rangeStrategy": "bump"
+  "rangeStrategy": "bump",
+  "labels": ["dependencies"]
 }
