@@ -6,8 +6,6 @@
     ":preserveSemverRanges",
     ":prHourlyLimit4",
     ":semanticCommits",
-    "group:monorepos",
-    "group:recommended",
     ":timezone(Europe/Paris)",
     "schedule:nonOfficeHours"
   ],
