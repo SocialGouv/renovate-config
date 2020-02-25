@@ -9,6 +9,7 @@
     ":timezone(Europe/Paris)",
     "schedule:nonOfficeHours"
   ],
+  "masterIssueAutoclose": true,
   "node": {
     "supportPolicy": ["active"]
   },
