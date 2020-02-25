@@ -6,8 +6,7 @@
     ":preserveSemverRanges",
     ":prHourlyLimit4",
     ":semanticCommits",
-    ":timezone(Europe/Paris)",
-    "schedule:nonOfficeHours"
+    ":timezone(Europe/Paris)"
   ],
   "masterIssueAutoclose": true,
   "node": {
