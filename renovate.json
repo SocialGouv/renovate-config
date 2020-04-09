@@ -6,7 +6,7 @@
     ":maintainLockFilesWeekly",
     ":masterIssue",
     ":preserveSemverRanges",
-    ":prHourlyLimitNone",
+    ":disableRateLimiting",
     ":semanticCommits",
     ":timezone(Europe/Paris)"
   ],
