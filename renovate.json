@@ -1,11 +1,12 @@
 {
+  "enabled": false,
   "extends": [
     "config:base",
     "docker:enableMajor",
     ":maintainLockFilesWeekly",
     ":masterIssue",
     ":preserveSemverRanges",
-    ":disableRateLimiting",
+    ":prHourlyLimit4",
     ":semanticCommits",
     ":timezone(Europe/Paris)"
   ],
