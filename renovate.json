@@ -11,7 +11,7 @@
   ],
   "masterIssueAutoclose": true,
   "node": {
-    "supportPolicy": ["lts_active"]
+    "supportPolicy": ["lts_latest"]
   },
   "packageRules": [
     {
