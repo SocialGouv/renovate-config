@@ -19,6 +19,15 @@
       "packagePatterns": [
         "^@socialgouv/"
       ]
+    },
+    {
+      "datasources": [
+        "docker"
+      ],
+      "packagePatterns": [
+        "^registry.gitlab.factory.social.gouv.fr/socialgouv/docker/"
+      ],
+      "groupName": "socialgouv/docker images"
     }
   ],
   "postUpdateOptions": [
