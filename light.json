@@ -1,16 +1,21 @@
 {
+  "enabled": true,
   "extends": [
-    "config:semverAllMonthly",
+    ":preserveSemverRanges",
+    "schedule:monthly",
+    ":maintainLockFilesMonthly",
     ":masterIssue",
     ":semanticCommits",
     ":timezone(Europe/Paris)",
-    "group:allNonMajor"
+    "group:allNonMajor",
+    "group:recommended",
+    ":separateMajorReleases"
   ],
   "masterIssueAutoclose": true,
   "separateMinorPatch": true,
   "patch": {
     "automerge": true,
-    "extends": ["schedule:earlyMondays"]
+    "extends": ["schedule:earlyMondays", "group:all"]
   },
   "node": {
     "supportPolicy": ["lts_latest"]
@@ -18,24 +23,21 @@
   "packageRules": [
     {
       "groupName": "SocialGouv",
-      "packagePatterns": [
-        "^@socialgouv/"
-      ]
+      "packagePatterns": ["^@socialgouv/"]
     },
     {
-      "datasources": [
-        "docker"
-      ],
+      "datasources": ["docker"],
       "packagePatterns": [
         "^registry.gitlab.factory.social.gouv.fr/socialgouv/docker/"
       ],
       "groupName": "socialgouv/docker images"
     }
   ],
-  "postUpdateOptions": [
-    "npmDedupe", 
-    "yarnDedupeHighest"
-  ],
+  "postUpdateOptions": ["npmDedupe", "yarnDedupeHighest"],
   "rangeStrategy": "bump",
-  "labels": ["dependencies"]
+  "labels": ["dependencies"],
+  "lockFileMaintenance": {
+    "extends": ["group:all"],
+    "commitMessageAction": "Update"
+  }
 }
