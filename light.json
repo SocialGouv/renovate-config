@@ -9,7 +9,7 @@
   "separateMinorPatch": true,
   "patch": {
     "automerge": true,
-    "schedule": "earlyMondays"
+    "schedule": ["earlyMondays"]
   },
   "node": {
     "supportPolicy": ["lts_latest"]
