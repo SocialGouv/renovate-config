@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "config:semverAllMonthly",
+    ":masterIssue",
+    ":semanticCommits",
+    ":timezone(Europe/Paris)"
+  ],
+  "masterIssueAutoclose": true,
+  "separateMinorPatch": true,
+  "patch": {
+    "automerge": true,
+    "schedule": "earlyMondays"
+  },
+  "node": {
+    "supportPolicy": ["lts_latest"]
+  },
+  "packageRules": [
+    {
+      "groupName": "SocialGouv",
+      "packagePatterns": [
+        "^@socialgouv/"
+      ]
+    },
+    {
+      "datasources": [
+        "docker"
+      ],
+      "packagePatterns": [
+        "^registry.gitlab.factory.social.gouv.fr/socialgouv/docker/"
+      ],
+      "groupName": "socialgouv/docker images"
+    }
+  ],
+  "postUpdateOptions": [
+    "npmDedupe", 
+    "yarnDedupeHighest"
+  ],
+  "rangeStrategy": "bump",
+  "labels": ["dependencies"]
+}
