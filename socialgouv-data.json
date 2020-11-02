@@ -1,8 +1,6 @@
 {
-  "enabled": true,
-  "extends": [
-    "github>SocialGouv/renovate-config:light"
-  ],
+  "enabled": false,
+  "extends": ["github>SocialGouv/renovate-config:light"],
   "ignorePresets": ["group:allNonMajor"],
   "packageRules": [
     {
@@ -20,4 +18,3 @@
     }
   ]
 }
-
