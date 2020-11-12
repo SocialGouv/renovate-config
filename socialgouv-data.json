@@ -11,7 +11,7 @@
       "updateTypes": ["minor", "patch"]
     },
     {
-      "excludePackagePatterns": ["^@socialgouv/.*-(data|vdd)$"],
+      "excludePackagePatterns": ["^@socialgouv/.*-(data|vdd|data-types)$"],
       "minor": {
         "groupName": "all non-major dependencies"
       }
