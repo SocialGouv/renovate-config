@@ -30,9 +30,9 @@
       "groupName": "kosko",
       "packagePatterns": [
         "^@kosko/",
-        "^@kubernetes-models/"
+        "^@kubernetes-models/",
         "^@socialgouv/kosko-charts$",
-        "^kosko$",
+        "^kosko$"
       ]
     }
   ],
