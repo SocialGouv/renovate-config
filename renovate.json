@@ -27,12 +27,13 @@
       "groupName": "socialgouv/docker images"
     },
     {
-      "groupName": "kosko",
+      "groupName": "kosko monorepo",
       "packagePatterns": [
         "^@kosko/",
         "^@kubernetes-models/",
         "^@socialgouv/kosko-charts$",
-        "^kosko$"
+        "^kosko$",
+        "^kubernetes-models$"
       ]
     }
   ],
