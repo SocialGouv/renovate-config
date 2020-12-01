@@ -18,6 +18,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - uses: actions/checkout@v2
+
       - name: Cache NPM
         uses: actions/cache@v2
         with:
