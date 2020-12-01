@@ -4,7 +4,7 @@ on:
   - pull_request
 
 jobs:
-  Quality Check:
+  Quality:
     strategy:
       matrix:
         node-version:
