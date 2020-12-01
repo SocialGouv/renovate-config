@@ -2,6 +2,8 @@
 
 Our shared renovate config
 
+https://app.renovatebot.com/dashboard#github/SocialGouv/renovate-config/
+
 ## Usage
 
 Choose you `preset` :
