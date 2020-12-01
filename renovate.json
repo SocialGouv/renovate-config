@@ -25,6 +25,15 @@
         "^registry.gitlab.factory.social.gouv.fr/socialgouv/docker/"
       ],
       "groupName": "socialgouv/docker images"
+    },
+    {
+      "groupName": "kosko",
+      "packagePatterns": [
+        "^@kosko/",
+        "^@kubernetes-models/"
+        "^@socialgouv/kosko-charts$",
+        "^kosko$",
+      ]
     }
   ],
   "postUpdateOptions": ["npmDedupe", "yarnDedupeHighest"],
