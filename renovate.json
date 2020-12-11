@@ -16,6 +16,10 @@
   },
   "packageRules": [
     {
+      "datasources": ["gitlab-tags"],
+      "registryUrls": ["https://gitlab.com"]
+    },
+    {
       "groupName": "SocialGouv",
       "packagePatterns": ["^@socialgouv/"]
     },
