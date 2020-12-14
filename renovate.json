@@ -16,6 +16,7 @@
   },
   "packageRules": [
     {
+      "managers": ["gitlabci-include"],
       "datasources": ["gitlab-tags"],
       "registryUrls": ["https://gitlab.com"]
     },
