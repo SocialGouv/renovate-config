@@ -1,41 +1,17 @@
 {
   "enabled": true,
   "extends": [
-    ":preserveSemverRanges",
+    "github>SocialGouv/renovate-config",
     "schedule:monthly",
-    ":maintainLockFilesMonthly",
-    ":masterIssue",
-    ":semanticCommits",
-    ":timezone(Europe/Paris)",
     "group:allNonMajor",
     "group:recommended",
     ":separateMajorReleases"
   ],
-  "masterIssueAutoclose": true,
   "separateMinorPatch": true,
   "patch": {
     "automerge": true,
     "extends": ["schedule:earlyMondays", "group:all"]
   },
-  "node": {
-    "supportPolicy": ["lts_latest"]
-  },
-  "packageRules": [
-    {
-      "groupName": "SocialGouv",
-      "packagePatterns": ["^@socialgouv/"]
-    },
-    {
-      "datasources": ["docker"],
-      "packagePatterns": [
-        "^registry.gitlab.factory.social.gouv.fr/socialgouv/docker/"
-      ],
-      "groupName": "socialgouv/docker images"
-    }
-  ],
-  "postUpdateOptions": ["npmDedupe", "yarnDedupeHighest"],
-  "rangeStrategy": "bump",
-  "labels": ["dependencies"],
   "lockFileMaintenance": {
     "extends": ["group:all"],
     "commitMessageAction": "Update"
