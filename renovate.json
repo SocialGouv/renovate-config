@@ -27,7 +27,9 @@
     {
       "datasources": ["docker"],
       "packagePatterns": [
-        "^registry.gitlab.factory.social.gouv.fr/socialgouv/docker/"
+        "^registry.gitlab.factory.social.gouv.fr/socialgouv/docker/",
+        "^ghcr.io/socialgouv/docker/",
+        "^docker.pkg.github.com/socialgouv/docker/"
       ],
       "groupName": "socialgouv/docker images"
     },
