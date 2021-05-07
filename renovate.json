@@ -48,7 +48,7 @@
   "postUpdateOptions": ["npmDedupe", "yarnDedupeHighest"],
   "rangeStrategy": "bump",
   "labels": ["dependencies"],
-  
+
   "regexManagers": [
     {
       "fileMatch": ["Dockerfile$"],
