@@ -26,8 +26,8 @@
       "packagePatterns": ["^@socialgouv/"]
     },
     {
-      "matchPackagePatterns": ["postgres"],
-      "matchCurrentVersion": "/^10\\./"
+      "matchPackageNames": ["postgres"],
+      "allowedVersions": "<=10"
     },
     {
       "datasources": ["docker"],
