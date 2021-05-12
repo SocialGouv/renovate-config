@@ -26,6 +26,10 @@
       "packagePatterns": ["^@socialgouv/"]
     },
     {
+      "matchPackagePatterns": ["postgres"],
+      "matchCurrentVersion": "/^10\\./"
+    },
+    {
       "datasources": ["docker"],
       "packagePatterns": [
         "^registry.gitlab.factory.social.gouv.fr/socialgouv/docker/",
