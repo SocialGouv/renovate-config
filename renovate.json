@@ -30,6 +30,10 @@
       "allowedVersions": "<=10"
     },
     {
+      "matchPackageNames": ["node"],
+      "allowedVersions": "<=14"
+    },
+    {
       "datasources": ["docker"],
       "packagePatterns": [
         "^registry.gitlab.factory.social.gouv.fr/socialgouv/docker/",
