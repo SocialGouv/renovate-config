@@ -72,6 +72,22 @@
         "let {- renovate: datasource=(?<datasource>[a-z-]+) depName=(?<depName>[^\\s]+)(?: lookupName=(?<lookupName>[^\\s]+))?(?: versioning=(?<versioning>[a-z-]+))? -}\\s.+?_VERSION\\s*=\\s*\"(?<currentValue>.+)\"\\s"
       ],
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+    },
+    {
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "dhall-lang/dhall-lang",
+      "fileMatch": ["\\.dhall$"],
+      "matchStrings": [
+        "https:\\/\\/prelude\\.dhall-lang\\.org\\/(?<currentValue>[^/]+)\\/"
+      ]
+    },
+    {
+      "datasourceTemplate": "git-refs",
+      "lookupNameTemplate": "https://github.com/{{{depName}}}.git",
+      "fileMatch": ["\\.dhall$"],
+      "matchStrings": [
+        "{- renovate: currentValue=(?<currentValue>.*?) -}\\s+https:\\/\\/raw\\.githubusercontent\\.com\\/(?<depName>[^\\/]+\\/[^\\/]+)\\/(?<currentDigest>[^\\/]+)\\/"
+      ]
     }
   ]
 }
