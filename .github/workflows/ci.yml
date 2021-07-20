@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - lts/*
+          - 15.x
 
     runs-on: ubuntu-latest
 
