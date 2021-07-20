@@ -5,16 +5,28 @@ on:
 
 jobs:
   Quality:
+    strategy:
+      matrix:
+        node-version:
+          - lts/*
+
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2-beta
         with:
-          node-version: lts/*
-          cache: 'npm'
+          node-version: ${{ matrix.node-version }}
 
       - uses: actions/checkout@v2
+
+      - name: Cache NPM
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-${{ matrix.node-version }}-npm
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.node-version }}-npm-
 
       - name: Lint
         run: npx prettier -c .
