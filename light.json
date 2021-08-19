@@ -2,9 +2,9 @@
   "extends": [
     "github>SocialGouv/renovate-config",
     "schedule:monthly",
-    "group:allNonMajor",
     "group:recommended",
-    ":separateMajorReleases"
+    ":separateMajorReleases",
+    "local>SocialGouv/renovate-config//rules/group-devdeployment-non-major"
   ],
   "separateMinorPatch": true,
   "patch": {
