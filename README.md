@@ -25,6 +25,12 @@ Set your preset in `.github/renovate.json`
 > Description of the rules we need.
 > 🔗 means _included in the default config_.
 
+- 🔗 `github>SocialGouv/renovate-config//rules/group-deployment-tools` :
+  Group all the tools needed to deploy on the SocialGouv infra.  
+  Mainly the depedencies of your `.k8s/package.json`.
+
+  See https://github.com/SocialGouv/kosko-charts/
+
 - 🔗 `github>SocialGouv/renovate-config//rules/node-lts-version` :
   Restrict the node versions to the current Active LTS or Maintenance LTS releases.
   See https://nodejs.org/en/about/releases/

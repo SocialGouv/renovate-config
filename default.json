@@ -9,6 +9,7 @@
     ":prHourlyLimit4",
     ":semanticCommits",
     ":timezone(Europe/Paris)",
+    "local>SocialGouv/renovate-config//rules/group-deployment-tools",
     "local>SocialGouv/renovate-config//rules/node-lts-version",
     "local>SocialGouv/renovate-config//rules/postgres-azure-version"
   ],
@@ -35,10 +36,6 @@
         "^ghcr.io/socialgouv/docker/",
         "^docker.pkg.github.com/socialgouv/docker/"
       ]
-    },
-    {
-      "groupName": "socialgouv deployment tools",
-      "matchPaths": [".k8s/package.json"]
     }
   ],
 

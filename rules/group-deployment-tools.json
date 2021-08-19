@@ -1,0 +1,9 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "groupName": "SocialGouv deployment tools",
+      "matchPaths": [".k8s/package.json"]
+    }
+  ]
+}
