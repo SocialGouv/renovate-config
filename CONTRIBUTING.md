@@ -30,6 +30,20 @@ $ yarn test
 }
 ```
 
+1. Add your rule to a preset (like the [default.json](./default.json) for example).
+
+```js
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    // [...]
+    "local>SocialGouv/renovate-config//rules/<my_rule>"
+    // [...]
+  },
+  // [...]
+}
+```
+
 1. Add script to test the configuration of this rule in the [package.json](./package.json).
 
 ```js
