@@ -8,7 +8,7 @@ https://app.renovatebot.com/dashboard#github/SocialGouv/renovate-config/
 
 Choose you `preset` :
 
-- `github>SocialGouv/renovate-config`: daily maintenance  
+- `github>SocialGouv/renovate-config`: daily maintenance
 - `github>SocialGouv/renovate-config:light`: weekly maintenance
 
 Set your preset in `.github/renovate.json`
@@ -22,8 +22,8 @@ Set your preset in `.github/renovate.json`
 
 ## Rules
 
-> Description of the rules we need.
-> :handshake: means _included in the default config_.
+> Description of the rules we need.  
+> :handshake: means _included in the default config_.  
 > :sloth: means _included in the light config_.
 
 - :handshake: `github>SocialGouv/renovate-config//rules/group-deployment-tools` :
