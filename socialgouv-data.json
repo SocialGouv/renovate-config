@@ -1,19 +1,19 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>SocialGouv/renovate-config:light"],
   "ignorePresets": ["group:allNonMajor"],
   "packageRules": [
     {
-      "packagePatterns": ["^@socialgouv/.*-(data|vdd)$"],
-      "schedule": ["at any time"],
-      "groupName": "@socialgouv data packages",
       "automerge": true,
-      "updateTypes": ["minor", "patch"]
+      "groupName": "@socialgouv data packages",
+      "matchPackagePatterns": ["^@socialgouv/.*-(data|vdd)$"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "schedule": ["at any time"]
     },
     {
-      "excludePackagePatterns": ["^@socialgouv/.*-(data|vdd|data-types)$"],
-      "minor": {
-        "groupName": "all non-major dependencies"
-      }
+      "groupName": "all non-major dependencies",
+      "excludePackagePatterns": ["^@socialgouv/.*-(data|vdd)$"],
+      "matchUpdateTypes": ["minor", "patch"]
     }
   ]
 }
