@@ -20,6 +20,19 @@ Set your preset in `.github/renovate.json`
 }
 ```
 
+## Rules
+
+> Description of the rules we need.
+> 🔗 means _included in the default config_.
+
+- 🔗 `github>SocialGouv/renovate-config//rules/node-lts-version` :
+  Restrict the node versions to the current Active LTS or Maintenance LTS releases.
+  See https://nodejs.org/en/about/releases/
+
+- 🔗 `github>SocialGouv/renovate-config//rules/postgres-azure-version` :
+  Restrict the postgres versions to the supported Azure PostgreSQL major versions.
+  See https://docs.microsoft.com/en-us/azure/postgresql/concepts-supported-versions
+
 ## Additionnals presets
 
 - `github>SocialGouv/renovate-config:socialgouv-data` : automerge social-gouv/data packages

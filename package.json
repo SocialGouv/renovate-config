@@ -11,6 +11,7 @@
     "//1": "other presets",
     "validate:light": "RENOVATE_CONFIG_FILE=light.json renovate-config-validator",
     "validate:rules/node-lts-version": "RENOVATE_CONFIG_FILE=rules/node-lts-version.json renovate-config-validator",
+    "validate:rules/postgres-azure-version": "RENOVATE_CONFIG_FILE=rules/postgres-azure-version.json renovate-config-validator",
     "validate:socialgouv-data": "RENOVATE_CONFIG_FILE=socialgouv-data.json renovate-config-validator"
   },
   "repository": {

@@ -9,7 +9,8 @@
     ":prHourlyLimit4",
     ":semanticCommits",
     ":timezone(Europe/Paris)",
-    "local>SocialGouv/renovate-config//rules/node-lts-version"
+    "local>SocialGouv/renovate-config//rules/node-lts-version",
+    "local>SocialGouv/renovate-config//rules/postgres-azure-version"
   ],
   "masterIssueAutoclose": true,
   "packageRules": [
@@ -21,10 +22,6 @@
     {
       "groupName": "SocialGouv",
       "packagePatterns": ["^@socialgouv/"]
-    },
-    {
-      "matchPackageNames": ["postgres"],
-      "allowedVersions": "<=10"
     },
     {
       "datasources": ["docker"],
