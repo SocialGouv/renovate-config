@@ -37,14 +37,8 @@
       ]
     },
     {
-      "groupName": "kosko monorepo",
-      "matchPackagePatterns": [
-        "^@kosko/",
-        "^@kubernetes-models/",
-        "^@socialgouv/kosko-charts$",
-        "^kosko$",
-        "^kubernetes-models$"
-      ]
+      "groupName": ".k8s",
+      "matchPaths": [".k8s/package.json"]
     }
   ],
 
