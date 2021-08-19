@@ -8,7 +8,7 @@ https://app.renovatebot.com/dashboard#github/SocialGouv/renovate-config/
 
 Choose you `preset` :
 
-- `github>SocialGouv/renovate-config`: daily maintenance
+- `github>SocialGouv/renovate-config`: daily maintenance  
 - `github>SocialGouv/renovate-config:light`: weekly maintenance
 
 Set your preset in `.github/renovate.json`
