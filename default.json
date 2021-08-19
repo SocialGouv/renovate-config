@@ -8,12 +8,10 @@
     ":preserveSemverRanges",
     ":prHourlyLimit4",
     ":semanticCommits",
-    ":timezone(Europe/Paris)"
+    ":timezone(Europe/Paris)",
+    "local>SocialGouv/renovate-config:node-version"
   ],
   "masterIssueAutoclose": true,
-  "node": {
-    "supportPolicy": ["lts_latest"]
-  },
   "packageRules": [
     {
       "managers": ["gitlabci-include"],
@@ -27,10 +25,6 @@
     {
       "matchPackageNames": ["postgres"],
       "allowedVersions": "<=10"
-    },
-    {
-      "matchPackageNames": ["node"],
-      "allowedVersions": "<=14"
     },
     {
       "datasources": ["docker"],

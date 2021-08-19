@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
+  "node": {
+    "supportPolicy": ["lts_latest"]
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["node"],
+      "allowedVersions": "<=14"
+    }
+  ]
+}
