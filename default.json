@@ -37,7 +37,7 @@
       ]
     },
     {
-      "groupName": ".k8s",
+      "groupName": "socialgouv deployment tools",
       "matchPaths": [".k8s/package.json"]
     }
   ],
