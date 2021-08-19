@@ -7,11 +7,11 @@
     "format": "prettier --write .",
     "lint": "prettier --check .",
     "test": "run-p validate:*",
-    "validate:default": "renovate-config-validator default.json",
+    "validate:default": "RENOVATE_CONFIG_FILE=default.json renovate-config-validator",
     "//1": "other presets",
-    "validate:light": "renovate-config-validator light.json",
-    "validate:node-lts-version": "renovate-config-validator node-lts-version.json",
-    "validate:socialgouv-data": "renovate-config-validator socialgouv-data.json"
+    "validate:light": "RENOVATE_CONFIG_FILE=light.json renovate-config-validator",
+    "validate:rules/node-lts-version": "RENOVATE_CONFIG_FILE=rules/node-lts-version.json renovate-config-validator",
+    "validate:socialgouv-data": "RENOVATE_CONFIG_FILE=socialgouv-data.json renovate-config-validator"
   },
   "repository": {
     "type": "git",

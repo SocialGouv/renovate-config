@@ -9,7 +9,7 @@
     ":prHourlyLimit4",
     ":semanticCommits",
     ":timezone(Europe/Paris)",
-    "local>SocialGouv/renovate-config:node-version"
+    "local>SocialGouv/renovate-config//rules/node-lts-version"
   ],
   "masterIssueAutoclose": true,
   "packageRules": [
