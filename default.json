@@ -4,7 +4,7 @@
     "config:base",
     "docker:enableMajor",
     ":maintainLockFilesMonthly",
-    ":masterIssue",
+    ":dependencyDashboard",
     ":preserveSemverRanges",
     ":prHourlyLimit4",
     ":semanticCommits",
@@ -12,29 +12,33 @@
     "local>SocialGouv/renovate-config//rules/node-lts-version",
     "local>SocialGouv/renovate-config//rules/postgres-azure-version"
   ],
-  "masterIssueAutoclose": true,
+  "dependencyDashboardAutoclose": true,
+  "postUpdateOptions": ["npmDedupe", "yarnDedupeHighest"],
+  "rangeStrategy": "bump",
+  "labels": ["dependencies"],
+
   "packageRules": [
     {
-      "managers": ["gitlabci-include"],
-      "datasources": ["gitlab-tags"],
+      "matchDatasources": ["gitlab-tags"],
+      "matchManagers": ["gitlabci-include"],
       "registryUrls": ["https://gitlab.com"]
     },
     {
       "groupName": "SocialGouv",
-      "packagePatterns": ["^@socialgouv/"]
+      "matchPackagePatterns": ["^@socialgouv/"]
     },
     {
-      "datasources": ["docker"],
-      "packagePatterns": [
+      "groupName": "socialgouv/docker images",
+      "matchDatasources": ["docker"],
+      "matchPackagePatterns": [
         "^registry.gitlab.factory.social.gouv.fr/socialgouv/docker/",
         "^ghcr.io/socialgouv/docker/",
         "^docker.pkg.github.com/socialgouv/docker/"
-      ],
-      "groupName": "socialgouv/docker images"
+      ]
     },
     {
       "groupName": "kosko monorepo",
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^@kosko/",
         "^@kubernetes-models/",
         "^@socialgouv/kosko-charts$",
@@ -43,9 +47,6 @@
       ]
     }
   ],
-  "postUpdateOptions": ["npmDedupe", "yarnDedupeHighest"],
-  "rangeStrategy": "bump",
-  "labels": ["dependencies"],
 
   "regexManagers": [
     {
