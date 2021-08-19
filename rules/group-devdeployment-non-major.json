@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "ignorePresets": ["group:allNonMajor"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-dependencies-minor-patch"
+    },
+    {
+      "matchPackagePatterns": ["*"],
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major dev dependencies",
+      "groupSlug": "all-devdependencies-minor-patch"
+    }
+  ]
+}

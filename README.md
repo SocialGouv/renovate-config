@@ -23,19 +23,23 @@ Set your preset in `.github/renovate.json`
 ## Rules
 
 > Description of the rules we need.
-> 🔗 means _included in the default config_.
+> :handshake: means _included in the default config_.
+> :sloth: means _included in the light config_.
 
-- 🔗 `github>SocialGouv/renovate-config//rules/group-deployment-tools` :
+- :handshake: `github>SocialGouv/renovate-config//rules/group-deployment-tools` :
   Group all the tools needed to deploy on the SocialGouv infra.  
-  Mainly the depedencies of your `.k8s/package.json`.
-
+  Mainly the depedencies of your `.k8s/package.json`.  
   See https://github.com/SocialGouv/kosko-charts/
 
-- 🔗 `github>SocialGouv/renovate-config//rules/node-lts-version` :
+- :sloth: `github>SocialGouv/renovate-config//rules/group-devdeployment-non-major` :
+  Group all non major `package.json` dependencies by dependecy type.  
+  On per for the `dependencies` another for the `devDependencies`
+
+- :handshake: `github>SocialGouv/renovate-config//rules/node-lts-version` :
   Restrict the node versions to the current Active LTS or Maintenance LTS releases.
   See https://nodejs.org/en/about/releases/
 
-- 🔗 `github>SocialGouv/renovate-config//rules/postgres-azure-version` :
+- :handshake: `github>SocialGouv/renovate-config//rules/postgres-azure-version` :
   Restrict the postgres versions to the supported Azure PostgreSQL major versions.
   See https://docs.microsoft.com/en-us/azure/postgresql/concepts-supported-versions
 
