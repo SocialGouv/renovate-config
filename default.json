@@ -32,10 +32,10 @@
       "groupName": "socialgouv/docker images",
       "matchDatasources": ["docker"],
       "matchPackagePatterns": [
-        "^registry.gitlab.factory.social.gouv.fr/socialgouv/docker/",
-        "^ghcr.io/socialgouv/docker/",
-        "^docker.pkg.github.com/socialgouv/docker/"
-      ]
+        "^ghcr.io/socialgouv/",
+        "^harbor.fabrique.social.gouv.fr/"
+      ],
+      "semanticCommitType": "fix"
     }
   ],
 
